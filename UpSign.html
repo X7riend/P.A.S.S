@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=number]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #0da83c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+/*Attach CSS document for styling purposes*/
+</style>
+<style ref="style.css"></style>
+<body>
+
+<form action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>P.A.S.S. Sign Up</h1>
+    <p>Thank you for choosing P.A.S.S.<div></div> Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="NSU Status"><b>NSU Status</b></label>
+        <form>
+            <select class="dropdown-tabs">
+                <option value="Student"> Student</option>
+                <option value="Staff"> Staff</option>
+                <option value="Faculty"> Faculty</option>
+                <option value="Visitor"> Visitor</option>
+            </select>
+        </form>
+    <label for="Student Type"><b>Do you live on campus or commute?</b></label>
+
+    <div></div>
+
+    <div class = "check-box-space"></div>
+    <input type="checkbox" id="student1" name="student1" value="Commuter">
+    <label for="commuter"> Commuter</label><br>
+    
+    <div class = "check-box-space"></div>
+    <input type="checkbox" id="student2" name="student2" value="On-Campus">
+    <label for="on-campus"> On Campus</label><br>
+
+    <label for="Dormitory"><b>If you are an on campus student, enter your dormitory.</b></label>
+        <form>
+            <select class="dropdown-tabs">
+                <option value="N/A"> </option>
+                <option value="Charles Hall"> Charles Hall</option>
+                <option value="Lee Hall"> Lee Hall</option>
+                <option value="Midrise Hall"> Midrise Hall</option>
+                <option value="Rosa Hall"> Rosa Hall</option>
+                <option value="New Residential South"> New Residential South</option>
+                <option value="New Residential North"> New Residential North</option>
+                <option value="Babbette Smith South"> Babbette Smith South</option>
+                <option value="Babbette Smith North"> Babbette Smith North</option>
+                <option value="Samuel Scott Hall">Samuel Scott Hall </option>
+                <option value="Spartan Suites">Spartan Suites </option>
+                
+            </select>
+        </form>
+
+    <label class="checkbox-input-label" for="handicap"><b>Do you have handicap parking? Check box for yes.</b></label>
+    <input class="checkbox-input" type="checkbox"  >
+
+    <label class="checkbox-input-label" for="reserved"><b>Do you have reserved parking? Check box for yes.</b></label>
+    <input class="checkbox-input" type="checkbox"  >
+
+    <div></div>
+
+    <label for="studentId"><b>Student ID Number</b></label>
+    <input type="text" class="input-box" placeholder="Enter Student Id">
+
+    <label for="decalNumber"><b>Decal Number</b></label>
+    <input type="text" class="input-box" placeholder="Enter Decal Number">
+
+    
+
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
